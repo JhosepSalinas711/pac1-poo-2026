@@ -12,24 +12,21 @@ namespace IntroduccionCSharp.Ejemplos
         public string Genero { get; set; }
         public int Edad { get; set; }
 
-        //Metodo : Constructor
+        // Método: Constructor
         /*
-
-            1. Se llama igual que la clase 
-            2. No retorna datos 
+            1. Se llama igual que la clase
+            2. No retorna datos
             3. Se utiliza para inicializar valores de propiedades de la clase
-            4. Se ejecuta cuando se construye el objeto 
-            5. NO se puede llamar por medio de sintaxis de punto 
-
-        */
-
-
-        public Persona (string nombres, string apellidos, string genero, int edad)
+            4. Se ejecuta cuando se construye el objeto
+            5. No se puede llamar por medio de la sintaxis de punto 
+        */ 
+        public Persona(string nombres, string apellidos, string genero, int edad)
         {
             Nombres = nombres;
             Apellidos = apellidos;
             Genero = genero;
             Edad = edad;
         }
+
     }
 }

@@ -1,0 +1,26 @@
+meta {
+  name: Edit
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:5193/api/person/0401200417890
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dni": "0401200417890",
+    "firstName": "Maria",
+    "lastName": "Aguilar",
+    "birthdate": "2001-05-23",
+    "gender": "Femenino"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
